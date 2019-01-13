@@ -2,8 +2,8 @@ project "ImGui"
 	project "StaticLib"
 	language "C++"
 
-	targetdir ("")
-	objdir ("")
+	targetdir ("bin/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/%{prj.name}")
+	objdir ("bin-int/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/%{prj.name}")
 
 	files
 	{
