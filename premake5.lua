@@ -1,5 +1,5 @@
 project "ImGui"
-	kind "StaticLib"
+	kind "SharedLib"
 	language "C++"
 
 	targetdir ("{wks.location}/bin/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/%{prj.name}")
