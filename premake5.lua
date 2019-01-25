@@ -23,6 +23,11 @@ project "ImGui"
 		systemversion "latest"
 		cppdialect "C++17"
 		staticruntime "On"
+		defines
+		{
+			"RN_WINDOWS",
+			"RN_IMGUI_EXPORT"
+		}
 
 	filter { "system:windows", "configurations:Release" }
 		buildoptions "/MT"
